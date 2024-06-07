@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <link rel="icon" href="path/to/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <title>Smart Login System</title>
+</head>
+<body>
+  <div class="container">
+    <div class="blueBg">
+      <div class="box signin">
+        <h2>Already Have An Account ?</h2>
+        <button class="signinBth">Login</button>
+      </div>
+      <div class="box signup">
+        <h2>Don't Have An Account ?</h2>
+        <button class="signupBth">Sign up</button>
+      </div>
+    </div>
+    
+    <div class="formBox">
+      <div class="form signInForm">
+        <form onsubmit="return false">  <!-- To button don't make Refresh -->
+          <h3>Login</h3>
+          <input class="loginEmail" type="email" placeholder="Enter your email">
+          <input class="loginPassword" type="password" placeholder="Enter your password">
+          <h5 class="masege"></h5>
+          <button class="loginButtom">Login</button>
+        </form>
+      </div>
+
+      <div class="form sigupForm">
+        <form onsubmit="return false">
+          <h3>Sign Up</h3>
+          <input class="signUpName" id="signUpName" type="text" placeholder="Enter your name">
+          <input class="signUpEmail" id="signUpEmail" type="email" placeholder="Enter your email">
+          <input class="signUpPassword" id="signUpPassword" type="password" placeholder="Enter password">
+          <h5 class="masege2"></h5>
+          <button class="signUpRegister">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+
