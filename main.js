@@ -13,7 +13,7 @@ signupBth.onclick = function() {
     body.classList.remove('active');
     }
 
-var path = '/home.html';
+var path = 'home.html';
 console.log(location.hostname+path);
 console.log(location.hostname+path);
 
@@ -95,7 +95,7 @@ function login() {
   for (var i = 0; i < authntcation.length; i++) {
     if (authntcation[i].Email.toLowerCase() === email2.toLowerCase() && authntcation[i].Password === password2) {
       localStorage.setItem('valedUsername', authntcation[i].Name);
-      window.open(path, "_blank");
+      window.open(location.pathname+path, "_blank");
     }
   }
 
