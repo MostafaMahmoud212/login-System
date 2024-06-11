@@ -91,7 +91,7 @@ function login() {
   for (var i = 0; i < authntcation.length; i++) {
     if (authntcation[i].Email.toLowerCase() === email2.toLowerCase() && authntcation[i].Password === password2) {
       localStorage.setItem('valedUsername', authntcation[i].Name);
-      window.open(path, "_self");
+      window.open(location.origin+path, "_self");
     }
   }
 
