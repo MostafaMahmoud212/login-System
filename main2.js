@@ -1,7 +1,7 @@
-var path2 = '/index.html';
+var path2 = 'index.html';
 var logOutButtom = document.querySelector(".logOutButtom");
 logOutButtom.addEventListener('click', function(){
-  window.open(location.origin+path2)
+  window.open(location.pathname+path2, "_self");
 });
 
 var username = localStorage.getItem('valedUsername')
