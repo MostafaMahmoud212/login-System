@@ -3,6 +3,7 @@ var signupBth = document.querySelector('.signupBth');
 var formBox = document.querySelector('.formBox');
 var body = document.querySelector('body');
 
+
 signupBth.onclick = function() {
   formBox.classList.add('active');
   body.classList.add('active');
@@ -13,6 +14,9 @@ signupBth.onclick = function() {
     }
 
 var path = '/home.html';
+console.log(location.hostname+path);
+console.log(location.hostname+path);
+
 var loginEmail = document.querySelector(".loginEmail");
 var loginPassword = document.querySelector(".loginPassword");
 var loginButtom = document.querySelector(".loginButtom");
@@ -91,7 +95,7 @@ function login() {
   for (var i = 0; i < authntcation.length; i++) {
     if (authntcation[i].Email.toLowerCase() === email2.toLowerCase() && authntcation[i].Password === password2) {
       localStorage.setItem('valedUsername', authntcation[i].Name);
-      window.open(location.origin+path, "_self");
+      window.open(location.hostname+path, "_self");
     }
   }
 
